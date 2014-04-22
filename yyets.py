@@ -17,12 +17,12 @@ def post(url, data, key):
     respHtml = yyets.read()
     find = re.search(key, respHtml)
     if find:
-        os.system('echo "Winter is coming"|mutt 250881298@qq.com')
+        os.system('echo "Winter is coming"|mutt @')
 
 def main():
     posturl = "http://www.yyets.com/User/Login/ajaxLogin"
-    data = {'account':'beyond_st',
-            'password':'19880621',
+    data = {'account':'nickname',
+            'password':'pwd',
             'from':'loginpage',
             'remember':'0',
             'url_back':''} 
